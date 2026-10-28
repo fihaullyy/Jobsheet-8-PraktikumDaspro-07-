@@ -13,6 +13,7 @@ public class rectangle07 {
                 System.out.print("#");
             }
         System.out.println();
+        sc.close();
         }
     }
 }

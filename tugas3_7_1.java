@@ -52,6 +52,6 @@ public class tugas3_7_1 {
             System.out.print(pesan);
             System.out.println("Total barang seluruh toko: " + totSemua);
             System.out.println("Toko dengan barang terbanyak: " + tokoBTerbnyk);
-        }
+        } sc.close();
     }
 }

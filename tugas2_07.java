@@ -6,15 +6,19 @@ public class tugas2_07 {
         int n = sc.nextInt();
         int jumlah = 0;
 
-        for (int i = 1; i <= n ; i++) {
-            for (int j = 1; j <= n ; j++) {
-                int perkalian = i * j;
-                System.out.print(perkalian + "   ");
-                jumlah += perkalian;
+        if (n < 3) {
+            System.out.println("Nilai n harus >= 3");
+        } else {
+            for (int i = 1; i <= n ; i++) {
+                for (int j = 1; j <= n ; j++) {
+                    int perkalian = i * j;
+                    System.out.printf("%4d", perkalian);
+                    jumlah += perkalian;
+                }
+                System.out.println();
             }
-            System.out.println();
+            System.out.println("Jumlah seluruh angka: " + jumlah);
+            sc.close();
         }
-        System.out.println("Jumlah seluruh angka: " + jumlah);
-        sc.close();
     }
 }
